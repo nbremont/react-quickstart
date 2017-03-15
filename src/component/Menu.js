@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router'
 
 class Menu extends Component {
   render() {
@@ -6,9 +7,8 @@ class Menu extends Component {
       <div className="header clearfix">
         <nav>
           <ul className="nav nav-pills pull-right">
-            <li role="presentation" className="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation" className="active"><Link to="/">Home</Link></li>
+            <li role="presentation"><Link to="detail">Detail</Link></li>
           </ul>
         </nav>
         <h3 className="text-muted">Project name</h3>
